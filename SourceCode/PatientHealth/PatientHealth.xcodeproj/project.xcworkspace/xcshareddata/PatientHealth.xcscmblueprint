@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "d5ffe1bb-6c0f-438c-a67b-5be36a1ea034",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d5ffe1bb-6c0f-438c-a67b-5be36a1ea034" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d5ffe1bb-6c0f-438c-a67b-5be36a1ea034" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A12AFEAF-8E30-4A52-9B40-FF7616B55013",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d5ffe1bb-6c0f-438c-a67b-5be36a1ea034" : "svn16\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PatientHealth",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PatientCentricity\/SourceCode\/PatientHealth\/PatientHealth.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/10.200.204.16\/mSolutions",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d5ffe1bb-6c0f-438c-a67b-5be36a1ea034"
+    }
+  ]
+}

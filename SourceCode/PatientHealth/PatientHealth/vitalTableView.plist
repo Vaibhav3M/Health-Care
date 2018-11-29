@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>numberOfRows</key>
+		<string>1</string>
+		<key>cellTitle</key>
+		<string>Weight</string>
+		<key>isVisible</key>
+		<false/>
+		<key>isExpanded</key>
+		<false/>
+		<key>isExpandable</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>numberOfRows</key>
+		<integer>1</integer>
+		<key>cellTitle</key>
+		<string>Pulse </string>
+		<key>isVisible</key>
+		<false/>
+		<key>isExpanded</key>
+		<false/>
+		<key>isExpandable</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>numberOfRows</key>
+		<integer>2</integer>
+		<key>cellTitle</key>
+		<string>Blood Pressure</string>
+		<key>isVisible</key>
+		<false/>
+		<key>isExpanded</key>
+		<false/>
+		<key>isExpandable</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>numberOfRows</key>
+		<integer>3</integer>
+		<key>cellTitle</key>
+		<string>Blood Glucose</string>
+		<key>isVisible</key>
+		<false/>
+		<key>isExpanded</key>
+		<false/>
+		<key>isExpandable</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>numberOfRows</key>
+		<integer>3</integer>
+		<key>cellTitle</key>
+		<string>Cholestrol</string>
+		<key>isVisible</key>
+		<false/>
+		<key>isExpanded</key>
+		<false/>
+		<key>isExpandable</key>
+		<false/>
+	</dict>
+</array>
+</plist>

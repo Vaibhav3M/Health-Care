@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLTPro-Th.otf">
+            <string>HelveticaNeueLTPro-Th</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomPicker">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXk-QH-bGg">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="73e-d6-4bk"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="xAU-VX-QSs"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="ZWX-x7-icv"/>
+                    </connections>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC6-hK-Jem">
+                    <frame key="frameInset" minX="333" minY="10" width="34" height="27"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeueLTPro-Th" family="Helvetica Neue LT Pro" pointSize="15"/>
+                    <state key="normal" title="Done">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doneAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="0rJ-xn-FtX"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select a value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-81-22P">
+                    <frame key="frameInset" minX="138" minY="16" width="99" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeueLTPro-Th" family="Helvetica Neue LT Pro" pointSize="17"/>
+                    <color key="textColor" red="0.27058823529411763" green="0.3529411764705882" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TC6-hK-Jem" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Oov-81-22P" secondAttribute="trailing" constant="10" id="2h1-E5-SG0"/>
+                <constraint firstAttribute="bottom" secondItem="dXk-QH-bGg" secondAttribute="bottom" constant="-1" id="5DP-5c-mi1"/>
+                <constraint firstItem="Oov-81-22P" firstAttribute="centerY" secondItem="TC6-hK-Jem" secondAttribute="centerY" constant="-0.5" id="8bl-c0-gGx"/>
+                <constraint firstAttribute="trailing" secondItem="TC6-hK-Jem" secondAttribute="trailing" constant="8" id="F8e-HN-rLu"/>
+                <constraint firstAttribute="trailing" secondItem="dXk-QH-bGg" secondAttribute="trailing" id="IpC-W3-ULC"/>
+                <constraint firstItem="dXk-QH-bGg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MqN-mx-jKs"/>
+                <constraint firstAttribute="centerX" secondItem="Oov-81-22P" secondAttribute="centerX" constant="0.5" id="SyL-nE-R0a"/>
+                <constraint firstItem="TC6-hK-Jem" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="z0N-Ty-hfu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="doneButton" destination="TC6-hK-Jem" id="8dP-pF-G0X"/>
+                <outlet property="selectedValue" destination="Oov-81-22P" id="YdH-uY-1BR"/>
+                <outlet property="simplePicker" destination="dXk-QH-bGg" id="tjC-HZ-a39"/>
+            </connections>
+            <point key="canvasLocation" x="482.5" y="580"/>
+        </view>
+        <view contentMode="scaleToFill" id="XY9-TU-Pil" customClass="CustomPicker">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLh-mf-hfC">
+                    <state key="normal" title="Done">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doneAction:" destination="XY9-TU-Pil" eventType="touchUpInside" id="ysu-1c-LKX"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuS-YL-910">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mhd-Hm-4SP">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="lfp-KM-Rda"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="490600855.75595498">
+                        <!--2016-07-19 06:00:55 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="dateChanged:" destination="XY9-TU-Pil" eventType="valueChanged" id="2wF-SX-hja"/>
+                    </connections>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gLh-mf-hfC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kuS-YL-910" secondAttribute="trailing" constant="10" id="Aov-mV-IdV"/>
+                <constraint firstItem="gLh-mf-hfC" firstAttribute="top" secondItem="XY9-TU-Pil" secondAttribute="top" constant="10" id="Hlg-Ua-Tiv"/>
+                <constraint firstAttribute="centerX" secondItem="kuS-YL-910" secondAttribute="centerX" constant="0.5" id="RRa-6X-ggT"/>
+                <constraint firstItem="kuS-YL-910" firstAttribute="centerY" secondItem="gLh-mf-hfC" secondAttribute="centerY" constant="-0.5" id="hYB-Cm-VmM"/>
+                <constraint firstAttribute="bottom" secondItem="mhd-Hm-4SP" secondAttribute="bottom" id="nwa-3d-uru"/>
+                <constraint firstAttribute="trailing" secondItem="gLh-mf-hfC" secondAttribute="trailing" constant="8" id="pD9-y8-l7X"/>
+                <constraint firstAttribute="trailing" secondItem="mhd-Hm-4SP" secondAttribute="trailing" id="psf-p2-Mfn"/>
+                <constraint firstItem="mhd-Hm-4SP" firstAttribute="leading" secondItem="XY9-TU-Pil" secondAttribute="leading" id="q0p-CY-P1a"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="datePicker" destination="mhd-Hm-4SP" id="0o8-UY-8i5"/>
+                <outlet property="doneButton" destination="gLh-mf-hfC" id="yUl-PF-Ban"/>
+                <outlet property="selectedValue" destination="kuS-YL-910" id="XLl-As-scg"/>
+            </connections>
+            <point key="canvasLocation" x="470.5" y="265"/>
+        </view>
+    </objects>
+</document>

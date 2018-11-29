@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="edf85815-2733-4b64-a988-6d9ec13c7499" activeEnvironment="Default" name="REST Patient Centric" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="9c5bfce4-e5da-47ef-ab61-2b76e4b7e756" wadlVersion="http://wadl.dev.java.net/2009/02" name="" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://Vijays-Mac-mini.local:8089/</con:endpoint></con:endpoints></con:interface><con:restMockService id="4431e111-2f56-4262-8d05-3ecdfb7de2c6" port="8089" path="/" host="Vijays-Mac-mini.local" name="PatientCentricMockServices"><con:settings/><con:properties/><con:restMockAction name="login" method="GET" resourcePath="/login" id="290bad16-e072-4743-8066-efda370a79a6"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="success" id="5064ea4a-e9ba-43ff-8af8-42779c0cfca5" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "email": "abc@abc.com",
+    “name”: “test”
+}</con:responseContent></con:response><con:response name="failure" id="ee307827-343e-49e5-8ed1-caa39069a806" httpResponseStatus="401" mediaType="application/json"><con:settings/><con:responseContent>{
+  "ResponseMessage" : "Unauthorized Access"
+}</con:responseContent></con:response></con:restMockAction><con:restMockAction name="register" method="GET" resourcePath="/register" id="555a8182-7e37-4536-8b91-36d7300feef9"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="success" id="989ca44e-0736-4f3d-9076-8ee472c90c67" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "ResponseMessage": "Registered Successsfully"
+}</con:responseContent></con:response><con:response name="failure" id="e3a84bef-69cf-4d4e-847c-889b7cb91d4a" httpResponseStatus="206" mediaType="application/json"><con:settings/><con:responseContent/></con:response></con:restMockAction><con:restMockAction name="dashboard" method="GET" resourcePath="/dashboard" id="29e1676e-4944-4757-885e-b3c8531480dc"><con:settings/><con:defaultResponse xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchPath>/*
+// Script dispatcher is used to select a response based on the incoming request.
+// Here are few examples showing how to match based on path, query param, header and body
+
+// Match based on path
+def requestPath = mockRequest.getPath()
+log.info "Path: "+ requestPath
+
+if( requestPath.contains("json") )
+{
+    // return the name of the response you want to dispatch
+    return "JSON Response"
+}
+
+
+// Match based on query parameter
+def queryString = mockRequest.getRequest().getQueryString()
+log.info "QueryString: " + queryString
+
+if( queryString.contains("stockholm") )
+{
+    // return the name of the response you want to dispatch
+    return "Response Stockholm"
+}
+else if( queryString.contains("london") )
+{
+    // return the name of the response you want to dispatch
+    return "Response London"
+}
+
+
+// Match based on header
+def acceptEncodingHeaderList = mockRequest.getRequestHeaders().get("Accept-Encoding")
+log.info "AcceptEncoding Header List: " + acceptEncodingHeaderList
+
+if( acceptEncodingHeaderList.contains("gzip,deflate") )
+{
+    // return the name of the response you want to dispatch
+    return "GZiped Response"
+}
+
+
+// Match based on body
+def requestBody = mockRequest.getRequestContent()
+log.info "Request body: " + requestBody
+
+if( requestBody.contains("some data") )
+{
+    // return the name of the response you want to dispatch
+    return "Response N"
+}
+*/
+</con:dispatchPath><con:response name="success" id="a4e12249-bd09-4873-a7db-20dd4109c50b" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+    "dashboard": {
+        "displayName": "David Smith",
+        "city": "New York"
+    },
+    "activityGoals": [
+                      {
+                      "activityName": "walking",
+                      "activityTarget": "4km",
+                      "activityAchievement": "2km"
+                      },
+                      {
+                      "activityName": "swimming",
+                      "activityTarget": "2km",
+                      "activityAchievement": "1km"
+                      }
+                      ],
+    "foodGoals": [
+                  {
+                  "foodName": "Dinner",
+                  "foodTarget": "Some eatable",
+                  "foodAchievement": "some Eatable"
+                  },
+                  {
+                  "foodName": "BreakFast",
+                  "foodTarget": "Some eatable",
+                  "foodAchievement": "some Eatable"
+                  }
+                  ],
+    "medicineGoals": [
+                      {
+                      "medicineName": "Combiflame",
+                      "medicineTarget": "4 times a day",
+                      "medicineAchievement": "how many dosages took"
+                      },
+                      {
+                      "medicineName": "Crocin",
+                      "medicineTarget": "3 times a day",
+                      "medicineAchievement": "2 times"
+                      }
+        ]
+}</con:responseContent></con:response><con:response name="failure" id="19db3d2b-dfa3-4369-ac97-5305902cbce5" httpResponseStatus="400" mediaType="application/json"><con:settings/><con:responseContent>{
+"response":"failure for dashboard service"
+}</con:responseContent></con:response></con:restMockAction></con:restMockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

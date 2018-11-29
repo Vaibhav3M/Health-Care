@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Q3I-qL-kZ2" customClass="BasicInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="703"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="bO0-g5-Pmk">
+                    <frame key="frameInset" width="399" height="823"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" id="VCg-Jd-vap">
+                    <frame key="frameInset" minX="-1" minY="1" width="400" height="702"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="Fcl-pS-caN">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="822"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name*" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="xx0-Po-M4o">
+                                    <frame key="frameInset" minX="46" minY="18" width="308" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.99933894229999998" green="0.99933894229999998" blue="0.99933894229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="Q3I-qL-kZ2" id="vXC-Hh-ibR"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email*" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="P8P-k2-xr8">
+                                    <frame key="frameInset" minX="46" minY="109" width="308" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="Q3I-qL-kZ2" id="r1k-Xc-zp3"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Set Password*" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="Izb-8G-RKf">
+                                    <frame key="frameInset" minX="46" minY="155" width="308" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="Q3I-qL-kZ2" id="gCh-uY-SsK"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password*" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="nUZ-eT-eF2">
+                                    <frame key="frameInset" minX="46" minY="203" width="308" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="Q3I-qL-kZ2" id="KbT-Ds-C6b"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Blood Group" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="Lvw-Zo-jEU">
+                                    <frame key="frameInset" minX="46" minY="252" width="308" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="Q3I-qL-kZ2" id="P3K-XK-SBh"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="wcN-V4-JVz">
+                                    <frame key="frameInset" minX="46" minY="302" width="308" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="Q3I-qL-kZ2" id="G5P-Ep-BbA"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="dEm-6h-QWp">
+                                    <frame key="frameInset" minX="46" minY="351" width="308" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="Q3I-qL-kZ2" id="rYL-rB-10e"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Allergies" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="OoV-1t-iJ7">
+                                    <frame key="frameInset" minX="46" minY="453" width="308" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="Q3I-qL-kZ2" id="XaR-8G-xzz"/>
+                                    </connections>
+                                </textField>
+                                <view contentMode="scaleToFill" id="RzP-9i-OhB">
+                                    <frame key="frameInset" minX="46" minY="491" width="308" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smoking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UqB-ms-7EH">
+                                            <frame key="frameInset" minX="8" minY="2" width="89" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YKh-hE-CcN">
+                                            <frame key="frameInset" minX="269" minY="6" width="14" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="Uncheck"/>
+                                            <connections>
+                                                <action selector="btnCheckSmokingAction:" destination="Q3I-qL-kZ2" eventType="touchUpInside" id="iSW-XG-RCc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select disease if any" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="onq-wo-VIi">
+                                    <frame key="frameInset" minX="120" minY="572" width="161" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.99933894229999998" green="0.99933894229999998" blue="0.99933894229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" id="htb-65-iTN">
+                                    <frame key="frameInset" minX="46" minY="601" width="308" height="35"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7QB-sf-zyh">
+                                            <frame key="frameInset" minX="271" minY="7" width="13" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="Uncheck"/>
+                                            <connections>
+                                                <action selector="btnDiabetiesAction:" destination="Q3I-qL-kZ2" eventType="touchUpInside" id="Eho-5w-BRL"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diabeties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iyH-jp-tAe">
+                                            <frame key="frameInset" minX="8" minY="8" width="100" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                            <color key="textColor" red="0.99933894229999998" green="0.99933894229999998" blue="0.99933894229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="T3n-rW-gyC">
+                                    <frame key="frameInset" minX="46" minY="668" width="308" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any Heart Condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vb1-da-iSw">
+                                            <frame key="frameInset" minX="8" width="134" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                            <color key="textColor" red="0.99933894229999998" green="0.99933894229999998" blue="0.99933894229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" tag="1005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m0W-us-Ofb">
+                                            <frame key="frameInset" minX="272" width="14" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="Uncheck"/>
+                                            <connections>
+                                                <action selector="btnHeartCondtnAction:" destination="Q3I-qL-kZ2" eventType="touchUpInside" id="nII-s0-I2n"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="jyi-jV-xxh">
+                                    <frame key="frameInset" minX="46" minY="697" width="308" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asthma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cmg-dM-WRL">
+                                            <frame key="frameInset" minX="8" width="111" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                            <color key="textColor" red="0.99933894229999998" green="0.99933894229999998" blue="0.99933894229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" tag="1006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9xI-HK-HTH">
+                                            <frame key="frameInset" minX="272" minY="-2" width="14" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="Uncheck"/>
+                                            <connections>
+                                                <action selector="btnAsthmaAction:" destination="Q3I-qL-kZ2" eventType="touchUpInside" id="pzg-t2-EcP"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="HCJ-6f-dIL">
+                                    <frame key="frameInset" minX="46" minY="639" width="308" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h5t-P8-QSK">
+                                            <frame key="frameInset" minX="271" width="14" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="Uncheck"/>
+                                            <connections>
+                                                <action selector="btnBPAction:" destination="Q3I-qL-kZ2" eventType="touchUpInside" id="bCG-9m-4Zh"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x4v-Vk-hBb">
+                                            <frame key="frameInset" minX="8" width="110" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                            <color key="textColor" red="0.99933894229999998" green="0.99933894229999998" blue="0.99933894229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="Tis-Wu-xwq">
+                                    <frame key="frameInset" minX="46" minY="750" width="308" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="taM-g8-oEL">
+                                            <frame key="frameInset" minX="8" minY="-1" width="108" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                            <state key="normal" title="Save" backgroundImage="Button">
+                                                <color key="titleColor" red="1" green="0.98331543809999999" blue="0.98078405030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnSaveAction:" destination="Q3I-qL-kZ2" eventType="touchUpInside" id="NdP-iM-Hfw"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mcP-7Q-25G">
+                                            <frame key="frameInset" minX="186" width="108" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                            <state key="normal" title="Next" backgroundImage="Button">
+                                                <color key="titleColor" red="1" green="0.98331543809999999" blue="0.98078405030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnNextAction:" destination="Q3I-qL-kZ2" eventType="touchUpInside" id="r6E-6l-ptv"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age*" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" id="qRq-g6-mTB">
+                                    <frame key="frameInset" minX="46" minY="62" width="308" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="Q3I-qL-kZ2" id="A6S-EK-hkf"/>
+                                    </connections>
+                                </textField>
+                                <view contentMode="scaleToFill" id="UDc-S9-N2H">
+                                    <frame key="frameInset" minX="46" minY="527" width="308" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drinking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qd2-7L-DjF">
+                                            <frame key="frameInset" minX="8" minY="3" width="77" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.99933894229999998" green="0.99933894229999998" blue="0.99933894229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ywn-xF-jFa">
+                                            <frame key="frameInset" minX="270" minY="4" width="14" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="Uncheck"/>
+                                            <connections>
+                                                <action selector="btnDrinkingAction:" destination="Q3I-qL-kZ2" eventType="touchUpInside" id="ZN6-N0-fmZ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" id="Chj-aQ-duO">
+                                    <frame key="frameInset" minX="46" minY="402" width="308" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnAsthma" destination="9xI-HK-HTH" id="IYL-6l-ycW"/>
+                <outlet property="btnBloodPressure" destination="h5t-P8-QSK" id="ec3-Yj-uYf"/>
+                <outlet property="btnCheckDiabeties" destination="7QB-sf-zyh" id="F7k-S8-fWu"/>
+                <outlet property="btnCheckDrinking" destination="Ywn-xF-jFa" id="JRi-uQ-7Nr"/>
+                <outlet property="btnCheckSmoking" destination="YKh-hE-CcN" id="Ybc-Hi-tpb"/>
+                <outlet property="btnHeartCondtn" destination="m0W-us-Ofb" id="5vQ-6i-3zR"/>
+                <outlet property="btnNext" destination="mcP-7Q-25G" id="dUk-9G-HKr"/>
+                <outlet property="btnSave" destination="taM-g8-oEL" id="CZT-Ug-thd"/>
+                <outlet property="lblSmoking" destination="UqB-ms-7EH" id="08z-Dx-hN0"/>
+                <outlet property="scrollView" destination="VCg-Jd-vap" id="KAB-Ou-0cF"/>
+                <outlet property="txtFieldAge" destination="qRq-g6-mTB" id="f8g-xL-8FM"/>
+                <outlet property="txtFieldAllergies" destination="OoV-1t-iJ7" id="Fti-CX-3oG"/>
+                <outlet property="txtFieldBloodGrp" destination="Lvw-Zo-jEU" id="BAK-53-Sko"/>
+                <outlet property="txtFieldConfirmPassword" destination="nUZ-eT-eF2" id="O0Q-ba-mt8"/>
+                <outlet property="txtFieldEmail" destination="P8P-k2-xr8" id="WVM-zb-RCa"/>
+                <outlet property="txtFieldHeight" destination="wcN-V4-JVz" id="AhO-Nr-uDY"/>
+                <outlet property="txtFieldSetPassword" destination="Izb-8G-RKf" id="dcL-cU-NP4"/>
+                <outlet property="txtFieldUsername" destination="xx0-Po-M4o" id="a3v-96-Nde"/>
+                <outlet property="txtFieldWeight" destination="dEm-6h-QWp" id="NH8-8w-8ok"/>
+                <outlet property="txtGender" destination="Chj-aQ-duO" id="1d9-f9-VsM"/>
+                <outlet property="viewBasicInfo" destination="Fcl-pS-caN" id="uOp-JN-GKc"/>
+            </connections>
+            <point key="canvasLocation" x="849.5" y="308.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Button" width="115" height="34"/>
+        <image name="Uncheck" width="14" height="14"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

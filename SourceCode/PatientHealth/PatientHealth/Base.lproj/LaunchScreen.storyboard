@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0H8-Sc-FdV">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash_gif.gif" translatesAutoresizingMaskIntoConstraints="NO" id="q20-5r-VWu">
+                                        <color key="backgroundColor" red="0.053243598789999999" green="0.4047017524" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.053243598789999999" green="0.4047017524" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="q20-5r-VWu" firstAttribute="centerX" secondItem="0H8-Sc-FdV" secondAttribute="centerX" constant="0.5" id="5zq-1x-Xx6"/>
+                                    <constraint firstItem="q20-5r-VWu" firstAttribute="centerY" secondItem="0H8-Sc-FdV" secondAttribute="centerY" id="Gmh-uq-x3l"/>
+                                    <constraint firstItem="q20-5r-VWu" firstAttribute="leading" secondItem="0H8-Sc-FdV" secondAttribute="leading" id="XMG-hr-HJo"/>
+                                    <constraint firstItem="q20-5r-VWu" firstAttribute="centerY" secondItem="0H8-Sc-FdV" secondAttribute="centerY" id="XUu-rb-XEF">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="q20-5r-VWu" secondAttribute="bottom" id="a4S-jI-H07">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstItem="q20-5r-VWu" firstAttribute="centerX" secondItem="0H8-Sc-FdV" secondAttribute="centerX" constant="0.5" id="bqt-NC-n86"/>
+                                    <constraint firstAttribute="trailing" secondItem="q20-5r-VWu" secondAttribute="trailing" constant="-1" id="g6Z-a6-coC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="q20-5r-VWu"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="5zq-1x-Xx6"/>
+                                        <exclude reference="Gmh-uq-x3l"/>
+                                        <exclude reference="XMG-hr-HJo"/>
+                                        <exclude reference="XUu-rb-XEF"/>
+                                        <exclude reference="a4S-jI-H07"/>
+                                        <exclude reference="bqt-NC-n86"/>
+                                        <exclude reference="g6Z-a6-coC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="q20-5r-VWu"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="5zq-1x-Xx6"/>
+                                        <include reference="Gmh-uq-x3l"/>
+                                        <include reference="XMG-hr-HJo"/>
+                                        <include reference="XUu-rb-XEF"/>
+                                        <include reference="a4S-jI-H07"/>
+                                        <include reference="bqt-NC-n86"/>
+                                        <include reference="g6Z-a6-coC"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0H8-Sc-FdV" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="CeL-yR-oAC">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="0H8-Sc-FdV" secondAttribute="bottom" id="HPa-FU-5Ua"/>
+                            <constraint firstAttribute="trailing" secondItem="0H8-Sc-FdV" secondAttribute="trailing" id="gRl-jA-Yad"/>
+                            <constraint firstItem="0H8-Sc-FdV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ohK-x4-wgL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0H8-Sc-FdV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="HPa-FU-5Ua"/>
+                                <exclude reference="CeL-yR-oAC"/>
+                                <exclude reference="gRl-jA-Yad"/>
+                                <exclude reference="ohK-x4-wgL"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="0H8-Sc-FdV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="HPa-FU-5Ua"/>
+                                <include reference="CeL-yR-oAC"/>
+                                <include reference="gRl-jA-Yad"/>
+                                <include reference="ohK-x4-wgL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash_gif.gif" width="750" height="1334"/>
+    </resources>
+</document>

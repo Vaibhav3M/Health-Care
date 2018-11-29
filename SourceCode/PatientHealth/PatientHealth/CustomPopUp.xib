@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLTPro-Th.otf">
+            <string>HelveticaNeueLTPro-Th</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomPopUp">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uvN-Yu-fD7">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="EIO-f9-Fun"/>
+                        <constraint firstAttribute="height" constant="40" id="x2k-gn-GaQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JG3-PL-2F1">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ODo-iN-ZU1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeueLTPro-Th" family="Helvetica Neue LT Pro" pointSize="17"/>
+                    <color key="textColor" red="0.27058823529411763" green="0.3529411764705882" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="uvN-Yu-fD7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="2FG-gM-dzh"/>
+                <constraint firstAttribute="trailing" secondItem="JG3-PL-2F1" secondAttribute="trailing" constant="22" id="9UE-7y-4fq"/>
+                <constraint firstItem="JG3-PL-2F1" firstAttribute="leading" secondItem="uvN-Yu-fD7" secondAttribute="trailing" constant="8" id="IT5-UY-fBK"/>
+                <constraint firstItem="uvN-Yu-fD7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="X1w-PG-AHX"/>
+                <constraint firstItem="JG3-PL-2F1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="gPS-dE-FM7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="uvN-Yu-fD7" id="SYZ-fZ-ZkV"/>
+                <outlet property="imageWidthConstraint" destination="EIO-f9-Fun" id="GXC-D3-N9z"/>
+                <outlet property="selectLabel" destination="JG3-PL-2F1" id="82f-Rh-9JB"/>
+            </connections>
+            <point key="canvasLocation" x="269.5" y="255"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,19 @@
+{
+    "lastLogin": 1471193600581,
+    "gender": "male",
+    "created": 1471153666000,
+    "weight": "40",
+    "ownerId": "66BD42D5-9DC8-3C24-FFE2-907FFAF38200",
+    "__meta": "{\"relationRemovalIds\":{},\"selectedProperties\":[\"gender\",\"created\",\"weight\",\"ownerId\",\"allergic\",\"__updated__meta\",\"bloodGroup\",\"password\",\"dob\",\"smoking\",\"name\",\"___class\",\"updated\",\"objectId\",\"email\",\"height\"],\"relatedObjects\":{}}",
+    "allergic": null,
+    "bloodGroup": "O+",
+    "dob": 1472149800000,
+    "smoking": null,
+    "name": "abc",
+    "___class": "Users",
+    "user-token": "2BECCA1C-E2F7-A43F-FF9F-FA1A42A5EE00",
+    "updated": 1471153851000,
+    "objectId": "66BD42D5-9DC8-3C24-FFE2-907FFAF38200",
+    "email": "abc@abc.com",
+    "height": "123"
+}

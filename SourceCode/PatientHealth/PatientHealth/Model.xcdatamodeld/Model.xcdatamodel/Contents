@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="activity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="current" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="session" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="target" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BasicInfoRegistration" representedClassName="BasicInfoRegistration" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="allergies" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bloodGroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="drinking" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="smoking" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BloodSugarReport" representedClassName="BloodSugarReport" syncable="YES">
+        <attribute name="afterMeal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fasting" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="random" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BPReport" representedClassName="BPReport" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diastolic" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="systolic" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CholestrolReport" representedClassName="CholestrolReport" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hdl" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="ldl" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="tdl" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Contact" representedClassName="Contact" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Food" representedClassName="Food" syncable="YES">
+        <attribute name="calories" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enddate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="foodname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="input" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startdate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Login" representedClassName="Entity" syncable="YES">
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Medicine" representedClassName="Medicine" syncable="YES">
+        <attribute name="diseasename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dosage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dosagenature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enddate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstTabIfSelected" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fourthTabIfSelected" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="fromdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medicinename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="secondTabIfSelected" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="thirdTabIfSelected" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="MedInfoRegistration" representedClassName="MedInfoRegistration" syncable="YES">
+        <attribute name="doseTimes" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="medId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="medName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PulseReport" representedClassName="PulseReport" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pulse" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tablets" representedClassName="Tablets" syncable="YES">
+        <attribute name="tabselected" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UploadPhotoRegistration" representedClassName="UploadPhotoRegistration" syncable="YES"/>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="bloodGroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profilePhoto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="smoker" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" ordered="YES" destinationEntity="User" inverseName="relationship" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="WeightReport" representedClassName="WeightReport" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="-54" positionY="72" width="128" height="135"/>
+        <element name="BasicInfoRegistration" positionX="-198" positionY="-27" width="128" height="210"/>
+        <element name="BPReport" positionX="0" positionY="45" width="128" height="120"/>
+        <element name="Contact" positionX="-36" positionY="216" width="128" height="90"/>
+        <element name="Food" positionX="9" positionY="54" width="128" height="120"/>
+        <element name="Login" positionX="61" positionY="-99" width="128" height="90"/>
+        <element name="Medicine" positionX="106" positionY="132" width="128" height="210"/>
+        <element name="MedInfoRegistration" positionX="70" positionY="9" width="128" height="45"/>
+        <element name="Tablets" positionX="9" positionY="54" width="128" height="60"/>
+        <element name="UploadPhotoRegistration" positionX="-144" positionY="-99" width="128" height="45"/>
+        <element name="User" positionX="286" positionY="-0" width="128" height="223"/>
+        <element name="CholestrolReport" positionX="0" positionY="45" width="128" height="135"/>
+        <element name="WeightReport" positionX="9" positionY="54" width="128" height="105"/>
+        <element name="PulseReport" positionX="18" positionY="63" width="128" height="105"/>
+        <element name="BloodSugarReport" positionX="27" positionY="72" width="128" height="135"/>
+    </elements>
+</model>

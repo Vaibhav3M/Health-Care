@@ -1,0 +1,42 @@
+{
+    "dashboard": {
+        "displayName": "David Smith",
+        "city": "New York"
+    },
+    "activityGoals": [
+                      {
+                      "activityName": "walking",
+                      "activityTarget": "4km",
+                      "activityAchievement": "2km"
+                      },
+                      {
+                      "activityName": "swimming",
+                      "activityTarget": "2km",
+                      "activityAchievement": "1km"
+                      }
+                      ],
+    "foodGoals": [
+                  {
+                  "foodName": "Dinner",
+                  "foodTarget": "Some eatable",
+                  "foodAchievement": "some Eatable"
+                  },
+                  {
+                  "foodName": "BreakFast",
+                  "foodTarget": "Some eatable",
+                  "foodAchievement": "some Eatable"
+                  }
+                  ],
+    "medicineGoals": [
+                      {
+                      "medicineName": "Combiflame",
+                      "medicineTarget": "4 times a day",
+                      "medicineAchievement": "how many dosages took"
+                      },
+                      {
+                      "medicineName": "Crocin",
+                      "medicineTarget": "3 times a day",
+                      "medicineAchievement": "2 times"
+                      }
+        ]
+}

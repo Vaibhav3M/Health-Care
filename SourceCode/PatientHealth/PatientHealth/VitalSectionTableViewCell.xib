@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="VitalSectionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apa-kc-6x6">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="215" id="AYB-rr-oXz"/>
+                            <constraint firstAttribute="height" constant="21" id="XXq-o4-qll"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="jeM-Jf-f6c">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1Sy-v8-MiR"/>
+                            <constraint firstAttribute="width" constant="30" id="aLq-pv-PCy"/>
+                        </constraints>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRf-dE-78d">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="jFe-dH-AtW"/>
+                            <constraint firstAttribute="width" constant="30" id="sPF-c6-XUb"/>
+                        </constraints>
+                        <state key="normal" image="Add"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.089299302280000006" green="0.60492449999999998" blue="0.45385886930000002" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="tintColor" red="0.96896923779999999" green="0.97843458520000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jeM-Jf-f6c" secondAttribute="trailing" constant="8" id="2dc-oW-SFx"/>
+                    <constraint firstItem="PRf-dE-78d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Dpz-WZ-sPB"/>
+                    <constraint firstItem="apa-kc-6x6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="L7W-7Q-63a"/>
+                    <constraint firstItem="PRf-dE-78d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="MdV-x0-hpK"/>
+                    <constraint firstItem="jeM-Jf-f6c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Wqh-yF-fTd"/>
+                    <constraint firstItem="apa-kc-6x6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="35" id="esu-tg-rhB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnSectionHeaderAdd" destination="PRf-dE-78d" id="MKV-vY-vQy"/>
+                <outlet property="imgArrow" destination="jeM-Jf-f6c" id="m3d-QY-4XA"/>
+                <outlet property="lblSectionHeader" destination="apa-kc-6x6" id="f9R-J4-DVP"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Add" width="19" height="19"/>
+        <image name="down" width="24" height="24"/>
+    </resources>
+</document>
